@@ -100,12 +100,11 @@ namespace SudokuSolver
 
         static void PrintGrid()
         {
-
+            ChangeColor();
             for (int i = 0; i < 9; i++)
             {
                 for (int j = 0; j < 9; j++)
                 {
-                    ChangeColor();
                     Console.Write(grid[i, j].ToString() + " ");
                 }
                 Console.WriteLine();
